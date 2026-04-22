@@ -1,0 +1,6 @@
+main: ${PACKAGE}.${NAME}
+name: ${NAME}
+version: "${VERSION}"
+api-version: "1.20"
+author: break08
+description: Backport the 26.1 recipe to older Minecraft
