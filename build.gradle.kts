@@ -1,6 +1,6 @@
 plugins {
-	id("fabric-loom") version "1.9-SNAPSHOT"
-	id("legacy-looming") version "1.9-SNAPSHOT" // Version must be the same as fabric-loom's
+	id("fabric-loom") version "1.15.3"
+	id("legacy-looming") version "1.15.3" // Version must be the same as fabric-loom's
 }
 
 base {
@@ -26,12 +26,11 @@ legacyLooming {
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.12.2"
-    mappings "net.legacyfabric:yarn:1.12.2+build.604:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.19.2"
+    minecraft("com.mojang:minecraft:1.12.2")
+    mappings("net.legacyfabric:yarn:1.12.2+build.604:v2")
+    modImplementation("net.fabricmc:fabric-loader:0.19.2")
 
-    // Legacy-Fabric API
-    modImplementation net.legacyfabric.legacy-fabric-api:legacy-fabric-api:1.13.3+1.12.2
+    modImplementation("net.legacyfabric.legacy-fabric-api:legacy-fabric-api:1.13.3+1.12.2")
 }
 
 tasks {
