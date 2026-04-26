@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "new_nametag_recipe",
+	"version": "1.0.0",
+	"name": "New NameTag Recipe",
+	"description": "Backport the 26.1 NameTag Recipe",
+	"authors": [
+		"break08"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/datapack/new-nametag-recipe/",
+		"sources": "https://github.com/break08/New-NameTag-Recipe"
+	},
+	"license": "MIT LICENSE",
+	"icon": "assets/example_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"init": [
+			"com.example.example_mod.ExampleMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": ">=1.12",
+		"osl-entrypoints": ">=0.4.0"
+	}
+}

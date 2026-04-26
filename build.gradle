@@ -1,6 +1,21 @@
 plugins {
-    // see https://fabricmc.net/develop/ for new versions
-    id 'fabric-loom' version '1.8-SNAPSHOT' apply false
-    // see https://projects.neoforged.net/neoforged/moddevgradle for new versions
-    id 'net.neoforged.moddev' version '2.0.62-beta' apply false
+	id 'java'
+	id 'net.fabricmc.fabric-loom-remap' version '1.16.1'
+	id 'ploceus' version '1.16.1'
+}
+
+loom {
+}
+
+ploceus {
+	setIntermediaryGeneration(2)
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	mappings ploceus.featherMappings(project.feather_build)
+
+	ploceus.dependOsl(project.osl_version)
 }
